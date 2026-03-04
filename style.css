@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #dadada;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #131921;
+    justify-content: space-around;
+    padding: 8px;
+}
+.nav-logo {
+    padding: 5px;
+}
+.nav-logo a {
+    margin: 0;
+}
+/* Deliver to Location */
+.nav-address {
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+    padding: 8px 5px;
+}
+.add-first {
+    color: #CCCCCC;
+    font-size: 12px;
+}
+.add-second {
+    font-size: 14px;
+}
+/* Search */
+.nav-search {
+    display: flex;
+    flex: 1;
+    margin: 0 15px;
+}
+.select-box {
+    position: relative;
+    background: #e6e6e6;
+    padding: 0 10px;
+    border-right: 1px solid #d1c5c5;
+    border-radius: 4px 0px 0px 4px;
+    display: flex;
+}
+.search-select {
+    border: none;
+    width: 100%; 
+    outline: none;
+    font-size: 12px;
+    background: #e6e6e6;
+    color: #555555;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-search-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    pointer-events: none;
+    font-size: 10px;
+   
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    font-size: 14px;
+    padding: 12px 10px 12px 7px;
+}
+.search-icon {
+    max-width: 42px;
+    padding: 8px;
+    background: #febd69;
+    border-radius: 0 4px 4px 0
+}
+
+.nav-language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 8px 5px;
+}
+.nav-language p {
+    font-size: 14px;
+}
+.nav-language i {
+    font-size: 10px;
+}
+.flag {
+    height: 25px;
+}
+.nav-signin,
+.nav-orders,
+.nav-cart {
+    padding: 8px 5px;
+}
+.text-no-decor {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+.first-line {
+    font-size: 12px;
+}
+.second-line {
+    font-size: 14px;
+}
+.nav-cart {
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-cart i {
+    font-size: 25px;
+}
+
+.panel {
+    display: flex;
+    background: #232f3e;
+    padding: 0 11px;
+    color: #fff;
+}
+
+.panel-all {
+    padding: 8px 9px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.panel-ops {
+    display: flex;
+    align-items: center;
+}
+
+.panel-div {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 7px;
+    margin: 0 6px;
+}
+
+.nav-logo:hover,
+.nav-address:hover,
+.nav-language:hover,
+.nav-signin:hover,
+.nav-orders:hover,
+.nav-cart:hover,
+.panel-all:hover,
+.panel-div:hover {
+    outline: 1px solid #fff;
+    border-radius: 2px;
+}

@@ -1,0 +1,138 @@
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -420px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu-div {
+    width: 370px;
+    background: white;
+    height: 100vh;
+}
+.login-user{
+    background: #232f3e;
+    height: 50px;
+    line-height: 50px;
+}
+
+.login-user a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 36px;
+}
+.login-user a i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+.section-container {
+    padding: 7px 0 30px;
+    height: 100%;
+    overflow: scroll;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.section .heading,
+.subdiv .heading {
+    padding: 13px 20px 7px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.section a {
+    padding: 13px 20px 13px 36px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #111111;
+    display: flex;
+    justify-content: space-between;
+}
+.section a:hover {
+    background-color: #eaeded;
+}
+
+.section a i {
+    color: #999090;
+    font-size: 16px;
+}
+.close {
+    position: absolute;
+    right: -45px;
+    top: 10px;
+    padding: 6px 4px;
+    outline: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close-btn {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+/* overlay */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.6);
+    z-index:999;
+    display:none;
+}
+
+.overlay.active{
+    display:block;
+}
+
+/* side sub menu */
+
+.side-sub-menu {
+    position: fixed;
+    top: 50px;
+    width: 370px;
+    left: -370px;
+    height: 100vh;
+    background: white;
+    overflow: scroll;
+    z-index: 1100;
+    transition: 0.3s;
+    padding: 7px 0 30px;
+}
+.side-sub-menu.active {
+    left: 0;
+}
+#backBtn {
+    padding: 13px 20px 13px 36px;
+    border-bottom: 1px solid #c9bdbd;
+    gap: 10px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#backBtn i {
+    color: #c1b6b6;
+    font-size: 16px;
+}
+.subdiv {
+    display: flex;
+    flex-direction: column;
+}
+.subdiv a {
+    padding: 13px 20px 13px 36px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #111111;
+}

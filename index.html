@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar Main -->
+        <div class="navbar">
+
+            <!-- logo -->
+            <div class="nav-logo">
+                <a href="" class="text-no-decor">
+                    <img src="assets/amazon_logo.png" alt="" width="100">
+                </a>
+            </div>
+
+            <!-- location -->
+            <a href="" class="nav-address">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <p class="add-first">Deliver to</p>
+                    <p class="add-second">India</p>
+                </div>
+            </a>
+
+            <!-- search -->
+            <div class="nav-search">
+                <div class="select-box">
+                    <select class="search-select">
+                        <option>All</option>
+                        <option>Arts & Crafts</option>
+                        <option>Automotive</option>
+                        <option>Beauty & personal Care</option>
+                        <option>Baby</option>
+                        <option>Books</option>
+                    </select>
+                    <i class="fa-solid fa-caret-down select-search-icon"></i>
+                </div>
+
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div> 
+
+            <!-- Language -->
+            <a href="" class="nav-language text-no-decor">
+                <img src="assets/us_flag.png" class="flag" alt="">
+                <p>EN</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+            <!-- sign in -->
+            <a href="" class="nav-signin text-no-decor">
+                <p class="first-line">Hello,Sign in</p>
+                <h5 class="second-line">Accounts & Lists <img src="assets/dropdown_icon.png" width="8px" alt=""></h5>
+            </a>
+            
+            <!-- Orders -->
+            <a href="" class="nav-orders text-no-decor">
+                <p class="first-line">Return</p>
+                <h5 class="second-line">& Orders</h5>
+            </a>
+
+            <!-- Cart -->
+            <!-- <a href="" class="nav-cart">
+                <img src="assets/cart_icon.png" width="35px" alt="">
+                <h4>Cart</h4>
+            </a> -->
+            <a href="" class="nav-cart text-no-decor">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+              </a>
+        </div>
+
+        <!-- 2nd Navbar-->
+        <div class="panel">
+            <div class="panel-all" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <a href="" class="panel-div">Today's Deals</a>
+                <a href="" class="panel-div">Prime Video</a>
+                <a href="" class="panel-div">Registry</a>
+                <a href="" class="panel-div">Gift Cards</a>
+                <a href="" class="panel-div">Customer Service</a>
+                <a href="" class="panel-div">Sell</a>
+            </div>
+        </div>
+        <!-- ADD SIDE MENU HERE -->
+        <div class="side-menu" id="sideMenu">
+            <div class="side-menu-div">
+                <div class="login-user">
+                  <a href="">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Hello, sign in
+                  </a>  
+                </div>
+                <div class="section-container">
+                    <div class="section">
+                        <h3 class="heading">Shop By Department</h3>
+                        <a href="">Mobiles
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="#" id="electronicsBtn">Electronics
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Computers
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Fashion
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Smart Home
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Arts & Crafts
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="section">
+                        <h3 class="heading">Programs & Features</h3>
+                        <a href="">Gift Cards
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Shop by interest
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">Amazon live
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="">International Shopping
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+        
+                    <div class="section">
+                        
+                        <h3 class="heading">Help & Settings</h3>
+        
+                        <a href="#">Your Account</a>
+                        <a href="#">Customer Service</a>
+                        <a href="#">Sign in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="close" id="close">
+                <i class="fa-solid fa-xmark close-btn" id="closeBtn"></i>
+            </div>
+        </div>
+    
+        <!-- SIDE SUB MENU  -->
+        <div class="side-sub-menu" id="electronicsMenu">
+            <div id="backBtn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Main Menu
+            </div>
+            <div class="subdiv">
+                <h3 class="heading">Electronics</h3>
+                <a href="#">Laptop</a>
+                <a href="#">Headphones</a>
+                <a href="#">Camera</a>  
+            </div>
+        </div>
+
+    </header>
+    <div class="overlay" id="overlay"></div>
+
+
+    <script src="script.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
