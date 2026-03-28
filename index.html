@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     <header>
@@ -47,7 +48,7 @@
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-            </div> 
+            </div>
 
             <!-- Language -->
             <a href="" class="nav-language text-no-decor">
@@ -69,14 +70,10 @@
             </a>
 
             <!-- Cart -->
-            <!-- <a href="" class="nav-cart">
-                <img src="assets/cart_icon.png" width="35px" alt="">
-                <h4>Cart</h4>
-            </a> -->
-            <a href="" class="nav-cart text-no-decor">
+            <a href="cart.html" class="nav-cart text-no-decor">
                 <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-              </a>
+                Cart (<span id="cartCount">0</span>)
+            </a>
         </div>
 
         <!-- 2nd Navbar-->
@@ -171,11 +168,26 @@
             </div>
         </div>
 
+        <div class="slider">
+            <div class="slides" id="slides">
+                <img src="assets/header_img1.jpg" class="slide" alt="">
+                <img src="assets/header_img2.jpg" class="slide" alt="">
+                <img src="assets/header_img3.jpg" class="slide" alt="">
+                <img src="assets/header_img4.jpg" class="slide" alt="">
+            </div>
+            <a href="#" class="prev">&#10094</a>
+            <a href="#" class="next">&#10095</a>
+            
+        </div>
+
     </header>
+
+
     <div class="overlay" id="overlay"></div>
 
 
     <script src="script.js"></script>
     <script src="sidebar.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

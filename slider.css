@@ -1,0 +1,26 @@
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    mask-image: linear-gradient(to bottom, #fff 50%, transparent 100%);
+}
+
+.prev,
+.next {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    top: 20%;
+    text-decoration: none;
+    padding: 0 25px;
+}
+.next {
+    right: 0;
+}

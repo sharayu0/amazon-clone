@@ -7,6 +7,10 @@
 body {
     background-color: #dadada;
 }
+header {
+    height: 100vh;
+    overflow-y: hidden;
+}
 /* Navbar */
 .navbar {
     display: flex;
@@ -83,16 +87,18 @@ body {
 }
 .search-icon {
     max-width: 42px;
-    padding: 8px;
+    padding: 10px;
     background: #febd69;
     border-radius: 0 4px 4px 0
 }
-
+.search-icon i {
+    font-size: 20px;
+}
 .nav-language {
     display: flex;
     align-items: center;
     gap: 2px;
-    padding: 8px 5px;
+    padding-top: 14px;
 }
 .nav-language p {
     font-size: 14px;
