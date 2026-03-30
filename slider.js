@@ -56,4 +56,12 @@ setInterval(() => {
     n++;
     slides.style.transition = "transform 0.5s ease";
     changeSlide();
+
+    if (n >= imgs.length-1) {
+        setTimeout(() => {
+           slides.style.transition = 'none';
+            n = 1; 
+            changeSlide();
+        },500);
+    }
 }, 5000);
