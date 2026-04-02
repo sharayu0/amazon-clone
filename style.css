@@ -7,10 +7,6 @@
 body {
     background-color: #dadada;
 }
-header {
-    height: 100vh;
-    overflow-y: hidden;
-}
 /* Navbar */
 .navbar {
     display: flex;
@@ -173,4 +169,36 @@ header {
 .panel-div:hover {
     outline: 1px solid #fff;
     border-radius: 2px;
+}
+
+/* box row */
+.box-container {
+    padding: 0 10px;
+    margin-top: -20vw;
+    position: relative;
+    z-index: 1;
+}
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box-col {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 10px;
+    padding: 20px;
+    max-width: 24%;
+}
+
+.box-link {
+    font-size: 13px;
+    color: #2162A1;
+    text-decoration: none;
+    margin-top: 10px;
 }
