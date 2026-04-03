@@ -65,3 +65,18 @@ setInterval(() => {
         },500);
     }
 }, 5000);
+
+
+/* product card slider */
+const productContainer = document.querySelector('.products');
+const cardPrev = document.querySelector('.card-prev');
+const cardNext = document.querySelector('.card-next');
+
+cardPrev.addEventListener('click', (e) => {
+    e.preventDefault();
+    productContainer.scrollLeft -= 800;
+});
+cardNext.addEventListener('click', (e) => {
+    e.preventDefault();
+    productContainer.scrollLeft += 800;
+});
