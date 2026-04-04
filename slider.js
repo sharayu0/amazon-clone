@@ -74,9 +74,10 @@ const cardNext = document.querySelector('.card-next');
 
 cardPrev.addEventListener('click', (e) => {
     e.preventDefault();
-    productContainer.scrollLeft -= 800;
+    productContainer.scrollLeft -= productContainer.clientWidth;
 });
+
 cardNext.addEventListener('click', (e) => {
     e.preventDefault();
-    productContainer.scrollLeft += 800;
+    productContainer.scrollLeft += productContainer.clientWidth;
 });
