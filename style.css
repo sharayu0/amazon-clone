@@ -237,10 +237,15 @@ body {
     cursor: pointer;
     width: 45px;
     height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #fff;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-    padding: 25px 14px;
+}
+.card-prev {
+    box-shadow: 3px 1px 3px #888;
 }
 .card-next {
     right: 0;
+    box-shadow: -3px 1px 3px #888;
 }
