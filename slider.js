@@ -68,16 +68,22 @@ setInterval(() => {
 
 
 /* product card slider */
-const productContainer = document.querySelector('.products');
-const cardPrev = document.querySelector('.card-prev');
-const cardNext = document.querySelector('.card-next');
+const sliders = document.querySelectorAll('.products-wrapper');
 
-cardPrev.addEventListener('click', (e) => {
-    e.preventDefault();
-    productContainer.scrollLeft -= productContainer.clientWidth;
-});
+sliders.forEach((slider) => {
 
-cardNext.addEventListener('click', (e) => {
-    e.preventDefault();
-    productContainer.scrollLeft += productContainer.clientWidth;
-});
+    const productContainer = slider.querySelector('.products');
+    const cardPrev = slider.querySelector('.card-prev');
+    const cardNext = slider.querySelector('.card-next');
+    
+    cardPrev.addEventListener('click', (e) => {
+        e.preventDefault();
+        productContainer.scrollLeft = -productContainer.clientWidth;
+    });
+    
+    cardNext.addEventListener('click', (e) => {
+        e.preventDefault();
+        productContainer.scrollLeft = productContainer.clientWidth;
+    });
+}); 
+

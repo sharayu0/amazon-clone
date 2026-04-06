@@ -249,3 +249,41 @@ body {
     right: 0;
     box-shadow: -3px 1px 3px #888;
 }
+
+/* product card slider with price */
+
+.products-slider-with-price {
+    margin: 10px;
+    background: white;
+    padding: 20px;  
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+}
+.product-img img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.product-offer p {
+    background: #be0b3b;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 8px 0;
+    font-size: 13px;
+}
+.product-offer span {
+    color: #be0b3b;
+    font-size: 12px;
+}
+.product-price {
+    color: gray;
+    font-size: 13px;
+}
+.product-card h4 {
+    color: #525252;
+    font-size: 15px;
+}
