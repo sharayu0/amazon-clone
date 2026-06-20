@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
+    <title>Amazon Clone | HTML CSS JavaScript</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="slider.css">
+    <meta name="description" content="Amazon Clone built using HTML, CSS and JavaScript featuring responsive layout, sidebar navigation, image slider and product carousel.">
+    <link rel="icon" href="images/amazon_logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <header>
         <!-- Navbar Main -->
-        <div class="navbar">
+        <nav class="navbar" aria-label="Primary Navigation">
 
             <!-- logo -->
             <div class="nav-logo">
-                <a href="" class="text-no-decor">
-                    <img src="assets/amazon_logo.png" alt="" width="100">
+                <a href="#" class="text-no-decor">
+                    <img src="images/amazon_logo.png" alt="Amazon logo" width="100">
                 </a>
             </div>
 
             <!-- location -->
-            <a href="" class="nav-address">
+            <a href="#" class="nav-address">
                 <i class="fa-solid fa-location-dot"></i>
                 <div>
                     <p class="add-first">Deliver to</p>
@@ -31,7 +33,7 @@
             </a>
 
             <!-- search -->
-            <div class="nav-search">
+            <form class="nav-search">
                 <div class="select-box">
                     <select class="search-select">
                         <option>All</option>
@@ -44,27 +46,28 @@
                     <i class="fa-solid fa-caret-down select-search-icon"></i>
                 </div>
 
-                <input type="text" placeholder="Search Amazon" class="search-input">
-                <div class="search-icon">
+                <input type="text" id="searchInput" placeholder="Search Amazon" class="search-input" autocomplete="off">
+
+                <button class="search-icon" aria-label="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+                </button>
+            </form>
 
             <!-- Language -->
-            <a href="" class="nav-language text-no-decor">
-                <img src="assets/us_flag.png" class="flag" alt="">
+            <a href="#" class="nav-language text-no-decor">
+                <img src="images/us_flag.png" class="flag" alt="Flag">
                 <p>EN</p>
                 <i class="fa-solid fa-caret-down"></i>
             </a>
 
             <!-- sign in -->
-            <a href="" class="nav-signin text-no-decor">
+            <a href="#" class="nav-signin text-no-decor">
                 <p class="first-line">Hello,Sign in</p>
-                <h5 class="second-line">Accounts & Lists <img src="assets/dropdown_icon.png" width="8px" alt=""></h5>
+                <h5 class="second-line">Accounts & Lists <img src="images/dropdown_icon.png" width="8px" alt="Dropdown icon"></h5>
             </a>
             
             <!-- Orders -->
-            <a href="" class="nav-orders text-no-decor">
+            <a href="#" class="nav-orders text-no-decor">
                 <p class="first-line">Return</p>
                 <h5 class="second-line">& Orders</h5>
             </a>
@@ -74,28 +77,28 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 Cart (<span id="cartCount">0</span>)
             </a>
-        </div>
+        </nav>
 
         <!-- 2nd Navbar-->
-        <div class="panel">
+        <nav class="panel">
             <div class="panel-all" id="menuBtn">
                 <i class="fa-solid fa-bars"></i>
                 All
             </div>
             <div class="panel-ops">
-                <a href="" class="panel-div">Today's Deals</a>
-                <a href="" class="panel-div">Prime Video</a>
-                <a href="" class="panel-div">Registry</a>
-                <a href="" class="panel-div">Gift Cards</a>
-                <a href="" class="panel-div">Customer Service</a>
-                <a href="" class="panel-div">Sell</a>
+                <a href="#" class="panel-div">Today's Deals</a>
+                <a href="#" class="panel-div">Prime Video</a>
+                <a href="#" class="panel-div">Registry</a>
+                <a href="#" class="panel-div">Gift Cards</a>
+                <a href="#" class="panel-div">Customer Service</a>
+                <a href="#" class="panel-div">Sell</a>
             </div>
-        </div>
+        </nav>
         <!-- ADD SIDE MENU HERE -->
         <div class="side-menu" id="sideMenu">
             <div class="side-menu-div">
                 <div class="login-user">
-                  <a href="">
+                  <a href="#">
                     <i class="fa-solid fa-circle-user"></i>
                     Hello, sign in
                   </a>  
@@ -103,38 +106,38 @@
                 <div class="section-container">
                     <div class="section">
                         <h3 class="heading">Shop By Department</h3>
-                        <a href="">Mobiles
+                        <a href="#">Mobiles
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
                         <a href="#" id="electronicsBtn">Electronics
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Computers
+                        <a href="#">Computers
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Fashion
+                        <a href="#">Fashion
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Smart Home
+                        <a href="#">Smart Home
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Arts & Crafts
+                        <a href="#">Arts & Crafts
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
                     </div>
 
                     <div class="section">
                         <h3 class="heading">Programs & Features</h3>
-                        <a href="">Gift Cards
+                        <a href="#">Gift Cards
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Shop by interest
+                        <a href="#">Shop by interest
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">Amazon live
+                        <a href="#">Amazon live
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
-                        <a href="">International Shopping
+                        <a href="#">International Shopping
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
                     </div>
@@ -170,244 +173,247 @@
 
     </header>
 
-    <div class="slider">
-        <div class="slides" id="slides">
-            <img src="assets/header_img1.jpg" class="slide" alt="">
-            <img src="assets/header_img2.jpg" class="slide" alt="">
-            <img src="assets/header_img3.jpg" class="slide" alt="">
-            <img src="assets/header_img4.jpg" class="slide" alt="">
-        </div>
-        <a href="#" class="prev">&#10094</a>
-        <a href="#" class="next">&#10095</a>    
-    </div>
+    <main>
 
-    <div class="box-container">
-        <div class="box-row">
-            <div class="box-col">
-                <h3 class="box-heading">Free International Returns</h3>
-                <img src="assets/box1-1.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
+        <section class="slider">
+            <div class="slides" id="slides">
+                <img src="images/header_img1.jpg" class="slide" alt="Amazon promotional banner">
+                <img src="images/header_img2.jpg" class="slide" alt="Amazon promotional banner">
+                <img src="images/header_img3.jpg" class="slide" alt="Amazon promotional banner">
+                <img src="images/header_img4.jpg" class="slide" alt="Amazon promotional banner">
             </div>
-            <div class="box-col">
-                <h3 class="box-heading">Lunar New Year</h3>
-                <img src="assets/box1-2.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Toy under $25</h3>
-                <img src="assets/box1-3.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Deals in PCs</h3>
-                <img src="assets/box1-4.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-        </div>
-        <div class="box-row">
-            <div class="box-col">
-                <h3 class="box-heading">Grooming Products</h3>
-                <img src="assets/box2-1.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Latest Devices</h3>
-                <img src="assets/box2-2.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Pets Food</h3>
-                <img src="assets/box2-3.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Fashion Mart</h3>
-                <img src="assets/box2-4.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-        </div>
-
-        <div class="products-slider">
-            <h2>Best Sellers in Sports and Outdoors</h2>
-            <div class="products-wrapper">
-                <a href="#" class="card-prev">&#10094</a>
-                <div class="products">
-                    <img class="product-img" src="assets/product1-1.jpg" alt="">
-                    <img class="product-img" src="assets/product1-2.jpg" alt="">
-                    <img class="product-img" src="assets/product1-3.jpg" alt="">
-                    <img class="product-img" src="assets/product1-4.jpg" alt="">
-                    <img class="product-img" src="assets/product1-5.jpg" alt="">
-                    <img class="product-img" src="assets/product1-6.jpg" alt="">
-                    <img class="product-img" src="assets/product1-7.jpg" alt="">
-                    <img class="product-img" src="assets/product1-8.jpg" alt="">
-                    <img class="product-img" src="assets/product1-9.jpg" alt="">
-                    <img class="product-img" src="assets/product1-10.jpg" alt="">
+            <a href="#" class="prev">&#10094</a>
+            <a href="#" class="next">&#10095</a>    
+        </section>
+    
+        <section class="box-container">
+            <div class="box-row">
+                <div class="box-col">
+                    <h3 class="box-heading">Free International Returns</h3>
+                    <img src="images/box1-1.jpg" alt="Free International Returns">
+                    <a href="#" class="box-link">Shop More</a>
                 </div>
-                <a href="#" class="card-next">&#10095</a>
-            </div>
-        </div>
-
-        <div class="box-row">
-            <div class="box-col">
-                <h3 class="box-heading">Stationary</h3>
-                <img src="assets/box3-1.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Laptops for study</h3>
-                <img src="assets/box3-2.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Office Chairs</h3>
-                <img src="assets/box3-3.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-            <div class="box-col">
-                <h3 class="box-heading">Gaming Monitor</h3>
-                <img src="assets/box3-4.jpg" alt="">
-                <a href="/" class="box-link">Shop More</a>
-            </div>
-        </div>
-
-        <div class="products-slider-with-price">
-            <h2>Deals under $25</h2>
-            <div class="products-wrapper">
-                <a href="#" class="card-prev">&#10094</a>
-                <div class="products">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-1.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-2.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-3.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-4.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-5.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-6.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-7.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-8.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-9.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-10.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-11.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="./assets/product2-12.jpg" alt="">
-                        </div>
-                        <div class="product-offer">
-                            <p>27% off</p><span>Deal</span>
-                        </div>
-                        <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
-                        <h4>This product is the best for you</h4>
-                    </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Lunar New Year</h3>
+                    <img src="images/box1-2.jpg" alt="Lunar New Year">
+                    <a href="#" class="box-link">Shop More</a>
                 </div>
-                <a href="#" class="card-next">&#10095</a>
+                <div class="box-col">
+                    <h3 class="box-heading">Toy under $25</h3>
+                    <img src="images/box1-3.jpg" alt="Toys">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Deals in PCs</h3>
+                    <img src="images/box1-4.jpg" alt="PCs">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
             </div>
-        </div>
-
-    </div>
+            <div class="box-row">
+                <div class="box-col">
+                    <h3 class="box-heading">Grooming Products</h3>
+                    <img src="images/box2-1.jpg" alt="Grooming Product">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Latest Devices</h3>
+                    <img src="images/box2-2.jpg" alt="Mobile">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Pets Food</h3>
+                    <img src="images/box2-3.jpg" alt="Pet Food">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Fashion Mart</h3>
+                    <img src="images/box2-4.jpg" alt="Dress">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+            </div>
+    
+            <div class="products-slider">
+                <h2>Best Sellers in Sports and Outdoors</h2>
+                <div class="products-wrapper">
+                    <a href="#" class="card-prev">&#10094</a>
+                    <div class="products">
+                        <img class="product-img" src="images/product1-1.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-2.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-3.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-4.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-5.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-6.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-7.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-8.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-9.jpg" alt="Sports product">
+                        <img class="product-img" src="images/product1-10.jpg" alt="Sports product">
+                    </div>
+                    <a href="#" class="card-next">&#10095</a>
+                </div>
+            </div>
+    
+            <div class="box-row">
+                <div class="box-col">
+                    <h3 class="box-heading">Stationary</h3>
+                    <img src="images/box3-1.jpg" alt="Stationary">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Laptops for study</h3>
+                    <img src="images/box3-2.jpg" alt="Laptops">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Office Chairs</h3>
+                    <img src="images/box3-3.jpg" alt="Office Chairs">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+                <div class="box-col">
+                    <h3 class="box-heading">Gaming Monitor</h3>
+                    <img src="images/box3-4.jpg" alt="Gaming Monitor">
+                    <a href="#" class="box-link">Shop More</a>
+                </div>
+            </div>
+    
+            <div class="products-slider-with-price">
+                <h2>Deals under $25</h2>
+                <div class="products-wrapper">
+                    <a href="#" class="card-prev">&#10094</a>
+                    <div class="products">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-1.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-2.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-3.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-4.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-5.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-6.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-7.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-8.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-9.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-10.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-11.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="./images/product2-12.jpg" alt="Clothes">
+                            </div>
+                            <div class="product-offer">
+                                <p>27% off</p><span>Deal</span>
+                            </div>
+                            <p class="product-price">$ <span>14.49</span> List Price:$19.95</p>
+                            <h4>This product is the best for you</h4>
+                        </div>
+                    </div>
+                    <a href="#" class="card-next">&#10095</a>
+                </div>
+            </div>
+    
+        </section>
+    </main>
 
     
     <div class="overlay" id="overlay"></div>
 
 
-    <script src="script.js"></script>
-    <script src="sidebar.js"></script>
-    <script src="slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
