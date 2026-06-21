@@ -71,8 +71,7 @@ body {
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
-
-    pointer-events: none;
+    pointer-events: none;  /* Mouse events “pass through” it to elements behind */
     font-size: 10px;
    
 }
@@ -86,14 +85,10 @@ body {
 }
 .search-icon {
     width: 50px;
-    padding: 10px;
     background: #febd69;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .search-icon:hover {
     background: #f3a847;
@@ -159,6 +154,9 @@ body {
     gap: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+.panel-all i {
+    font-size: 20px;
 }
 .panel-ops {
     display: flex;

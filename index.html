@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Clone | HTML CSS JavaScript</title>
+    <title>Amazon Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Amazon Clone built using HTML, CSS and JavaScript featuring responsive layout, sidebar navigation, image slider and product carousel.">
     <link rel="icon" href="images/amazon_logo.png">
@@ -35,7 +35,7 @@
             <!-- search -->
             <form class="nav-search">
                 <div class="select-box">
-                    <select class="search-select">
+                    <select class="search-select" id="search-select">
                         <option>All</option>
                         <option>Arts & Crafts</option>
                         <option>Automotive</option>
@@ -79,7 +79,7 @@
             </a>
         </nav>
 
-        <!-- 2nd Navbar-->
+        <!-- Secondary Navbar-->
         <nav class="panel">
             <div class="panel-all" id="menuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -94,7 +94,7 @@
                 <a href="#" class="panel-div">Sell</a>
             </div>
         </nav>
-        <!-- ADD SIDE MENU HERE -->
+        <!-- SIDE MENU -->
         <div class="side-menu" id="sideMenu">
             <div class="side-menu-div">
                 <div class="login-user">
@@ -152,9 +152,9 @@
                     </div>
                 </div>
             </div>
-            <div class="close" id="close">
+            <button class="close" id="close" aria-label="Close Menu">
                 <i class="fa-solid fa-xmark close-btn" id="closeBtn"></i>
-            </div>
+            </button>
         </div>
     
         <!-- SIDE SUB MENU  -->

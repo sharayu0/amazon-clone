@@ -1,16 +1,16 @@
 .side-menu {
     position: fixed;
     top: 0;
-    left: -420px;
+    transform: translateX(-420px);
+    transition: transform .3s ease;
     z-index: 1000;
-    transition: 0.3s;
 }
 .side-menu.active {
-    left: 0;
+    transform: translateX(0);
 }
 
 .side-menu-div {
-    width: 370px;
+    width: 365px;
     background: white;
     height: 100vh;
 }
@@ -68,9 +68,13 @@
     right: -45px;
     top: 10px;
     padding: 6px 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.close:active {
     outline: 1px solid white;
     border-radius: 4px;
-    cursor: pointer;
 }
 .close-btn {
     color: #fff;
@@ -100,17 +104,17 @@
 .side-sub-menu {
     position: fixed;
     top: 50px;
-    width: 370px;
-    left: -370px;
+    width: 365px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
     height: 100vh;
     background: white;
     overflow: scroll;
     z-index: 1100;
-    transition: 0.3s;
     padding: 7px 0 30px;
 }
 .side-sub-menu.active {
-    left: 0;
+    transform: translateX(0);
 }
 #backBtn {
     padding: 13px 20px 13px 36px;
