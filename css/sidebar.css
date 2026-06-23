@@ -34,7 +34,8 @@
 .section-container {
     padding: 7px 0 30px;
     height: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .section {
     display: flex;

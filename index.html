@@ -8,6 +8,7 @@
     <meta name="description" content="Amazon Clone built using HTML, CSS and JavaScript featuring responsive layout, sidebar navigation, image slider and product carousel.">
     <link rel="icon" href="images/amazon_logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/slider.css">
 </head>
@@ -33,25 +34,31 @@
             </a>
 
             <!-- search -->
-            <form class="nav-search">
-                <div class="select-box">
-                    <select class="search-select" id="search-select">
-                        <option>All</option>
-                        <option>Arts & Crafts</option>
-                        <option>Automotive</option>
-                        <option>Beauty & personal Care</option>
-                        <option>Baby</option>
-                        <option>Books</option>
-                    </select>
-                    <i class="fa-solid fa-caret-down select-search-icon"></i>
+            <div class="search-container">
+                <form class="nav-search">
+                    <div class="select-box">
+                        <select class="search-select" id="search-select">
+                            <option>All</option>
+                            <option>Arts & Crafts</option>
+                            <option>Automotive</option>
+                            <option>Beauty & personal Care</option>
+                            <option>Baby</option>
+                            <option>Books</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down select-search-icon"></i>
+                    </div>
+    
+                    <input type="text" id="searchInput" placeholder="Search Amazon" class="search-input" autocomplete="off">
+    
+                    <button class="search-icon" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <div class="search-result" id="searchResult">
+                    
                 </div>
-
-                <input type="text" id="searchInput" placeholder="Search Amazon" class="search-input" autocomplete="off">
-
-                <button class="search-icon" aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
+            </div>
 
             <!-- Language -->
             <a href="#" class="nav-language text-no-decor">
@@ -98,10 +105,10 @@
         <div class="side-menu" id="sideMenu">
             <div class="side-menu-div">
                 <div class="login-user">
-                  <a href="#">
-                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-user"></i>
                     Hello, sign in
-                  </a>  
+                    </a>  
                 </div>
                 <div class="section-container">
                     <div class="section">
@@ -414,6 +421,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/slider.js"></script>
 </body>
 </html>
