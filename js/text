@@ -1,5 +1,5 @@
-const searchInput = document.querySelector('#searchInput');
-const searchResult = document.querySelector('#searchResult');
+const searchInput = document.querySelector("#searchInput");
+const searchResult = document.querySelector("#searchResult");
 
 const products = [
     "iPhone 16",
@@ -22,36 +22,43 @@ const products = [
     "Jeans"
 ];
 
-searchInput.addEventListener('input',() => {
-    const value = searchInput.value.toLowerCase();
-    
-    if (value === "") {
-        return;
-    } 
-    
-    const filteredProduct = products.filter((product) => {
-        return product.toLowerCase().includes(value);
-    });
+searchInput.addEventListener("input", () => {
 
-    if (filteredProduct.length === 0) {
+    const value = searchInput.value.toLowerCase();
+
+    if (value === "") {
         searchResult.style.display = "none";
         return;
     }
+
+    const filteredProducts = products.filter((product) => {
+        return product.toLowerCase().includes(value);
+    });
+
     searchResult.innerHTML = "";
+
+    if (filteredProducts.length === 0) {
+        searchResult.style.display = "none";
+        return;
+    }
 
     searchResult.style.display = "block";
 
-    filteredProduct.forEach((product)=> {
-        console.log(product);
-        const item = document.createElement("div");
-        item.classList.add("search-item");
-        item.textContent = product;
-        searchResult.appendChild(item);
+    filteredProducts.forEach((product) => {
 
-        item.addEventListener('click',() => {
+        const item = document.createElement("div");
+
+        item.classList.add("search-item");
+
+        item.textContent = product;
+
+        item.addEventListener("click", () => {
             searchInput.value = product;
             searchResult.style.display = "none";
         });
+
+        searchResult.appendChild(item);
+
     });
-    
+
 });

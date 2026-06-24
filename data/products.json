@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "iPhone16",
+        "price": 79999,
+        "category": "Mobiles"
+    },
+    {
+        "id": 2,
+        "title": "Samsung Galaxy S25",
+        "price": 74999,
+        "image": "images/samsung.jpg",
+        "category": "Mobiles"
+    },
+    {
+        "id": 3,
+        "title": "Laptop",
+        "price": 54999,
+        "image": "images/laptop.jpg",
+        "category": "Computers"
+    },
+    {
+        "id": 4,
+        "title": "Headphones",
+        "price": 2999,
+        "image": "images/headphone.jpg",
+        "category": "Electronics"
+    }
+]
