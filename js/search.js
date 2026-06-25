@@ -1,55 +1,46 @@
 const searchInput = document.querySelector('#searchInput');
 const searchResult = document.querySelector('#searchResult');
 
-const products = [
-    "iPhone 16",
-    "iPhone Charger",
-    "iPhone Cover",
-    "Samsung Galaxy S25",
-    "Laptop",
-    "Wireless Mouse",
-    "Bluetooth Speaker",
-    "Headphones",
-    "Smart Watch",
-    "Keyboard",
-    "Camera",
-    "Television",
-    "Air Conditioner",
-    "Refrigerator",
-    "Mixer Grinder",
-    "Shoes",
-    "T-Shirt",
-    "Jeans"
-];
+let products = [];
+
+// Load products from JSON
+async function loadProducts() {
+    const response = await fetch("data/products.json");
+    products = await response.json();
+    console.log(products);
+}
+
+loadProducts();
 
 searchInput.addEventListener('input',() => {
-    const value = searchInput.value.toLowerCase();
+    const value = searchInput.value.trim().toLowerCase();
+    console.log(value);
+
+    searchResult.innerHTML = "";
     
     if (value === "") {
         return;
     } 
     
     const filteredProduct = products.filter((product) => {
-        return product.toLowerCase().includes(value);
+        return product.title.toLowerCase().includes(value);
     });
 
     if (filteredProduct.length === 0) {
         searchResult.style.display = "none";
         return;
     }
-    searchResult.innerHTML = "";
 
     searchResult.style.display = "block";
 
     filteredProduct.forEach((product)=> {
-        console.log(product);
         const item = document.createElement("div");
         item.classList.add("search-item");
-        item.textContent = product;
+        item.textContent = product.title;
         searchResult.appendChild(item);
 
         item.addEventListener('click',() => {
-            searchInput.value = product;
+            searchInput.value = product.title;
             searchResult.style.display = "none";
         });
     });
