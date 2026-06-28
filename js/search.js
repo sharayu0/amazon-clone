@@ -7,14 +7,12 @@ let products = [];
 async function loadProducts() {
     const response = await fetch("data/products.json");
     products = await response.json();
-    console.log(products);
 }
 
 loadProducts();
 
 searchInput.addEventListener('input',() => {
-    const value = searchInput.value.trim().toLowerCase();
-    console.log(value);
+    const value = searchInput.value.toLowerCase();
 
     searchResult.innerHTML = "";
     

@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "title": "Gaming Accessories",
+        "link": "category.html?category=gaming",
+        "items": [
+            {
+                "title": "Headsets",
+                "image": "assets/images/headset.jpg"
+            },
+            {
+                "title": "Keyboards",
+                "image": "assets/images/keyboard.jpg"
+            },
+            {
+                "title": "Computer Mice",
+                "image": "assets/images/mouse.jpg"
+            },
+            {
+                "title": "Chairs",
+                "image": "assets/images/chair.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Shop for your Home",
+        "link": "category.html?category=home_cleaning",
+        "items": [
+            {
+                "title": "Cleaning Tools",
+                "image": "assets/images/cleaning.jpg"
+            },
+            {
+                "title": "Home Storage",
+                "image": "assets/images/storage.jpg"
+            },
+            {
+                "title": "Home Decor",
+                "image": "assets/images/decor.jpg"
+            },
+            {
+                "title": "Bedding",
+                "image": "assets/images/bed.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Kitchen Appliances",
+        "link": "category.html?category=kitchen",
+        "items": [
+            {
+                "title": "Cooker",
+                "image": "assets/images/cooker.jpg"
+            },
+            {
+                "title": "Coffee Maker",
+                "image": "assets/images/coffee-maker.jpg"
+            },
+            {
+                "title": "Microwave",
+                "image": "assets/images/microwave.jpg"
+            },
+            {
+                "title": "Kettle",
+                "image": "assets/images/kettle.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Shop Fashion for less",
+        "link": "category.html?category=fashion",
+        "items": [
+            {
+                "title": "Jeans",
+                "image": "assets/images/jeans.jpg"
+            },
+            {
+                "title": "Top",
+                "image": "assets/images/top.jpg"
+            },
+            {
+                "title": "Dress",
+                "image": "assets/images/dress.jpg"
+            },
+            {
+                "title": "Shoes",
+                "image": "assets/images/shoes.jpg"
+            }
+        ]
+    }
+]
