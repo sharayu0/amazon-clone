@@ -65,25 +65,3 @@ setInterval(() => {
         },500);
     }
 }, 5000);
-
-
-/* product card slider */
-const sliders = document.querySelectorAll('.products-wrapper');
-
-sliders.forEach((slider) => {
-
-    const productContainer = slider.querySelector('.products');
-    const cardPrev = slider.querySelector('.card-prev');
-    const cardNext = slider.querySelector('.card-next');
-    
-    cardPrev.addEventListener('click', (e) => {
-        e.preventDefault();
-        productContainer.scrollLeft = -productContainer.clientWidth;
-    });
-    
-    cardNext.addEventListener('click', (e) => {
-        e.preventDefault();
-        productContainer.scrollLeft = productContainer.clientWidth;
-    });
-}); 
-

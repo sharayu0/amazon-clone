@@ -1,29 +1,212 @@
 [
     {
         "id": 1,
-        "title": "iPhone16",
+        "title": "Refrigerator",
         "price": 79999,
-        "category": "Mobiles"
+        "image": "assets/images/refrigerator.jpg",
+        "category": "electronics"
     },
     {
         "id": 2,
-        "title": "Samsung Galaxy S25",
+        "title": "Power Bank",
         "price": 74999,
-        "image": "images/samsung.jpg",
-        "category": "Mobiles"
+        "image": "assets/images/power-bank.jpg",
+        "category": "electronics"
     },
     {
         "id": 3,
         "title": "Laptop",
         "price": 54999,
-        "image": "images/laptop.jpg",
-        "category": "Computers"
+        "image": "assets/images/laptop.jpg",
+        "category": "electronics"
     },
     {
         "id": 4,
-        "title": "Headphones",
+        "title": "Earbud",
         "price": 2999,
-        "image": "images/headphone.jpg",
-        "category": "Electronics"
+        "image": "assets/images/earbuds.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 5,
+        "title": "Golf Ball",
+        "price": 2999,
+        "image": "assets/images/golf-ball.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 6,
+        "title": "Fitness Tracker Band",
+        "price": 2999,
+        "image": "assets/images/fitness-tracker.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 7,
+        "title": "Lifestraw Personal Water Filter",
+        "price": 2999,
+        "image": "assets/images/personal-water-filter.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 8,
+        "title": "Zeerun Weighted Vest",
+        "price": 59.99,
+        "image": "assets/images/weight-vest.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 9,
+        "title": "Swim Goggles",
+        "price": 19.99,
+        "image": "assets/images/swim-goggles.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 10,
+        "title": "Dumbell",
+        "price": 59.99,
+        "image": "assets/images/dumbbell.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 11,
+        "title": "Outdoor Pickleballs",
+        "price": 19.99,
+        "image": "assets/images/outdoor-pickleballs.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 12,
+        "title": "Watch",
+        "price": 2999,
+        "image": "assets/images/watch.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 13,
+        "title": "Cooler",
+        "price": 2999,
+        "image": "assets/images/cooler.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 14,
+        "title": "Fan",
+        "price": 2999,
+        "image": "assets/images/fan.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 15,
+        "title": "Bike",
+        "price": 2999,
+        "image": "assets/images/bike.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 16,
+        "title": "Refrigerator2",
+        "price": 79999,
+        "image": "assets/images/refrigerator.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 17,
+        "title": "Power Bank2",
+        "price": 74999,
+        "image": "assets/images/power-bank.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 18,
+        "title": "Laptop2",
+        "price": 54999,
+        "image": "assets/images/laptop.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 19,
+        "title": "Earbud2",
+        "price": 2999,
+        "image": "assets/images/earbuds.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 20,
+        "title": "Golf Ball2",
+        "price": 2999,
+        "image": "assets/images/golf-ball.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 21,
+        "title": "Fitness Tracker Band2",
+        "price": 2999,
+        "image": "assets/images/fitness-tracker.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 22,
+        "title": "Lifestraw Personal Water Filter2",
+        "price": 2999,
+        "image": "assets/images/personal-water-filter.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 23,
+        "title": "Zeerun Weighted Vest2",
+        "price": 59.99,
+        "image": "assets/images/weight-vest.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 24,
+        "title": "Swim Goggles2",
+        "price": 19.99,
+        "image": "assets/images/swim-goggles.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 25,
+        "title": "Dumbell2",
+        "price": 59.99,
+        "image": "assets/images/dumbbell.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 26,
+        "title": "Outdoor Pickleballs2",
+        "price": 19.99,
+        "image": "assets/images/outdoor-pickleballs.jpg",
+        "category": "sports"
+    },
+    {
+        "id": 27,
+        "title": "Watch2",
+        "price": 2999,
+        "image": "assets/images/watch.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 28,
+        "title": "Cooler2",
+        "price": 2999,
+        "image": "assets/images/cooler.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 29,
+        "title": "Fan2",
+        "price": 2999,
+        "image": "assets/images/fan.jpg",
+        "category": "electronics"
+    },
+    {
+        "id": 30,
+        "title": "Bike2",
+        "price": 2999,
+        "image": "assets/images/bike.jpg",
+        "category": "electronics"
     }
 ]
