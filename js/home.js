@@ -15,6 +15,7 @@ async function loadHomePage() {
     renderSlider("#sportsSlider", "Best Sellers in Sports & Outdoors", sports);
 
     renderSlider("#electronicsSlider", "Best Sellers in Electronics", electronics);
+
 }
 
 loadHomePage();

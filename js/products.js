@@ -17,7 +17,7 @@ function renderCategories(categories) {
         category.items.forEach((item)=> {
             subcategories += `
                 <div class="sub-category">
-                    <img src="${item.image}" alt"${item.title}">
+                    <img src="${item.image}" alt="${item.title}">
                     <p>${item.title}</p>
                 </div>
             `;
